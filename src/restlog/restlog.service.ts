@@ -10,7 +10,7 @@ export class RestLogService {
     private restLogRepository: Repository<RestLog>,
   ) {}
 
-  async create(restLogDto: { restId: string, startTime: Date }) {
+  async create(restLogDto: { restId: string, startTime: string }) {
     const restLog = this.restLogRepository.create(restLogDto);
     return this.restLogRepository.save(restLog);
   }

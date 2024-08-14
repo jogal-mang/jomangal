@@ -18,4 +18,8 @@ export class RestService {
   async findAll() {
     return this.restRepository.find();
   }
+
+  async findOneById(id: number) {
+    return this.restRepository.findOne({ where: { id } });
+  }
 }

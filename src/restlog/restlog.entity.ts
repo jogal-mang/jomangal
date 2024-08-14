@@ -9,5 +9,5 @@ export class RestLog {
   restId: string;
 
   @Column()
-  startTime: Date;
+  startTime: string;
 }
